@@ -18,6 +18,14 @@ void main() {
     await tester.pump(const Duration(milliseconds: 300));
 
     expect(find.byType(LandingScreen), findsOneWidget);
+    expect(
+      find.textContaining('This prototype uses fictional sample data'),
+      findsOneWidget,
+    );
+    expect(
+      find.textContaining('Verified hospitals submit real-time resource availability'),
+      findsNothing,
+    );
   });
 
   testWidgets('LIFE-LINK AI renders on a mobile viewport', (

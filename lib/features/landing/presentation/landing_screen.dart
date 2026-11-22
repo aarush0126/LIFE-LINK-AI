@@ -1358,32 +1358,32 @@ class _HowItWorksSection extends StatelessWidget {
       (
         Icons.upload_rounded,
         AppColors.accentPrimary,
-        'Hospital Submits Data',
-        'Verified hospitals submit real-time resource availability — blood, beds, organs, equipment — through authenticated portals.',
+        'Institutions Share Reports',
+        'Participating institutions can report resource indicators through approved channels. This prototype uses fictional sample data and has no live hospital connection.',
       ),
       (
         Icons.verified_rounded,
         AppColors.accentSecondary,
-        'AI Verifies & Validates',
-        'The AI layer validates data quality, checks for anomalies, and flags inconsistencies before data enters the coordination grid.',
+        'AI-Assisted Data Checks',
+        'The demo assistant can summarize synthetic records and flag missing or stale fields. It does not verify institutions or validate real-world availability.',
       ),
       (
         Icons.hub_rounded,
         AppColors.success,
-        'Platform Matches Needs',
-        'The platform intelligently matches verified resource availability with incoming coordination requests across the network.',
+        'Search Reported Resources',
+        'Authorized users can search reported indicators to prepare an enquiry. Results are not resource matches, guarantees, reservations, or allocations.',
       ),
       (
         Icons.admin_panel_settings_rounded,
         AppColors.warning,
-        'Authorized Pathway Activated',
-        'Authorized coordinators review and approve the matched pathway. No resource allocation happens without human authorization.',
+        'People Review Next Steps',
+        'Authorized people decide whether to proceed through established institutional pathways. This prototype only records simulated workflow steps.',
       ),
       (
         Icons.groups_rounded,
         AppColors.accentPrimary,
-        'Medical Teams Act',
-        'Human medical teams complete the process. The platform supports — it never replaces — clinical judgment and responsibility.',
+        'Institutions Coordinate Directly',
+        'Any real-world response requires direct confirmation by authorized institutions and medical professionals; the prototype sends no requests externally.',
       ),
     ];
 

@@ -164,6 +164,16 @@ void main() {
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 100));
     expect(router.routeInformationProvider.value.uri.path, RouteNames.settings);
+    expect(
+      find.textContaining(
+        'Production sign-in targets this environment’s configured API URL.',
+      ),
+      findsOneWidget,
+    );
+    expect(
+      find.text('Production authentication is not configured.'),
+      findsNothing,
+    );
 
     router.go(RouteNames.admin);
     await tester.pump();

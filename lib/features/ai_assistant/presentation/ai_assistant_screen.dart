@@ -258,7 +258,8 @@ class _AiAssistantScreenState extends ConsumerState<AiAssistantScreen> {
                             fontSize: 13,
                           ),
                           decoration: const InputDecoration(
-                            hintText: 'Enter clinical triage query or organ logistics question...',
+                            hintText:
+                                'Ask about fictional resource reports or data freshness...',
                             hintStyle: TextStyle(
                               color: AppColors.textMuted,
                               fontSize: 13,

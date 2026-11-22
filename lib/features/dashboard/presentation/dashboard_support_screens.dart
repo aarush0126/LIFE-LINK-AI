@@ -431,8 +431,9 @@ class SettingsScreen extends StatelessWidget {
             _SettingsTile(
               icon: Icons.verified_user_outlined,
               title: 'Authentication',
-              detail: 'Demo sign-in is in-memory. Production authentication is not configured.',
-              status: 'Demo mode',
+              detail:
+                  'Production sign-in targets this environment’s configured API URL. Demo authentication remains local-only.',
+              status: 'Dio API',
             ),
             const SizedBox(height: 12),
             _SettingsTile(
