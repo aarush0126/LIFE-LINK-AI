@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="LIFE-LINK AI - National Healthcare Technology Platform for Real-Time Organ Allocation, ICU Bed Tracking, Blood Bank Grid, and Clinical Decision Support.">
+  <meta name="theme-color" content="#0F4C81">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="LIFE-LINK AI">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>LIFE-LINK AI | National Healthcare Technology Platform</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0B132B;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    #loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at 50% 50%, #1C2541 0%, #0B132B 100%);
+      color: #FFFFFF;
+      z-index: 9999;
+      transition: opacity 0.4s ease-out;
+    }
+    .pulse-ring {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 3px solid #00C49F;
+      animation: pulse 1.6s ease-in-out infinite;
+      box-shadow: 0 0 24px rgba(0, 196, 159, 0.4);
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.9); opacity: 0.6; }
+      50% { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(0.9); opacity: 0.6; }
+    }
+    .platform-title {
+      margin-top: 24px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #E2E8F0;
+    }
+    .platform-subtitle {
+      margin-top: 6px;
+      font-size: 13px;
+      color: #94A3B8;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  <div id="loading-container">
+    <div class="pulse-ring"></div>
+    <div class="platform-title">LIFE-LINK AI</div>
+    <div class="platform-subtitle">National Healthcare Technology Platform</div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function() {
+      var loader = document.getElementById('loading-container');
+      if (loader) {
+        loader.style.opacity = '0';
+        setTimeout(function() {
+          loader.remove();
+        }, 400);
+      }
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
